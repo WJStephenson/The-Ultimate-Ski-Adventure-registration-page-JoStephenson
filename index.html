@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ski Adventure</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet'>
+  <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="login-container">
+      <h2>Register for the ultimate ski adventure</h2>
+      <div class="basic-info-container">
+        <h3>Your basic info</h3>
+        <div class="input-label">
+          <label for="name">Name and Surname *</label>
+          <input id="name" type="text" required>
+        </div>
+        <div class="email-password">
+          <div class="input-label">
+            <label for="email">Email *</label>
+            <input id="email" type="email" placeholder="example@mail.com" required>
+          </div>
+          <div class="input-label">
+            <label for="password">Password *</label>
+            <input id="password" type="password" placeholder="password" required>
+          </div>
+        </div>
+        <div class="age">
+          <label>Age</label>
+          <label for="age-under18">
+            <input id="age-under18" type="radio" name="age" value="Under 18">
+            Under 18
+          </label>
+          <label for="age-over18">
+            <input id="age-over18" type="radio" name="age" value="18 and over 18">
+            18 and Over
+          </label>
+        </div>
+      </div>
+      <div class="about-container">
+        <h3>Tell us about yourself</h3>
+        <div class="input-label">
+          <label>Your biography</label>
+          <textarea rows="4" cols="50" class="biography"></textarea>
+        </div>
+        <div class="input-label">
+          <label for="city-select">Select location</label>
+          <select name="City" id="city-select" required>
+            <option>Mayrhofen</option>
+            <option>City 2</option>
+            <option>City 3</option>
+            <option>City 4</option>
+          </select>
+        </div>
+        <div class="equipment-container">
+          <label>What equipment would you like to rent?</label>
+          <label for="equipment-checkbox-1">
+            <input type="checkbox" id="equipment-checkbox-1">
+            Skis
+          </label>
+          <label for="equipment-checkbox-2">
+            <input type="checkbox" id="equipment-checkbox-2">              
+            Helmet
+          </label>
+          <label for="equipment-checkbox-3">
+            <input type="checkbox" id="equipment-checkbox-3">
+            Goggles
+          </label>
+          <label for="equipment-checkbox-4">
+            <input type="checkbox" id="equipment-checkbox-4">
+            Ski boots
+          </label>
+          <label for="equipment-checkbox-5">
+            <input type="checkbox" id="equipment-checkbox-5">
+            Ski poles
+          </label>
+        </div>
+        <div class="buttons-container">
+          <button id="reset-button" type="reset">Reset</button>
+          <button id="submit-button" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="img-container">
+      <h1>Epic experience<br>in the snow</h1>
+      <img src="assets/ski.jpeg" alt="Skiier in mid air">
+    </div>
+  
+</body>
+
+</html>
